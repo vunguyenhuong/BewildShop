@@ -1,0 +1,26 @@
+*{
+    scroll-behavior: smooth;
+}
+.social__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+h2:hover, h3:hover, h4:hover, h5:hover {
+    color: #28A745;
+}
+
+.navbar-collapse i:hover {
+    color: #28A745;
+}
+
+.item__noti {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.navbar-nav li:hover {
+    border-bottom: 3px solid #28A745;
+}

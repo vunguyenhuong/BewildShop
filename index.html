@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <title>Bewild Shop</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Anwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <img src="./images/logo.png" alt="" style="width: 70px;">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#"><i class="fa-solid fa-house"></i> Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#products"><i class="fa-solid fa-utensils"></i> Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#about"><i class="fa-solid fa-users"></i>About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-success" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i> Notifications</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    Notification 1
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Notification 2
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#contact"><i class="fa-solid fa-circle-info"></i> Contact</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#modalSignIn" >Sign In</button>
+                    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#modalSignUp" >Sign Up</button>
+                </div>
+            </nav>
+            
+            <!-- Slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/7.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pieces of chicken</h5>
+                            <p>Pieces of chicken fillet with mushrooms stewed in tomato sauce with boiled broccoli and...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/8.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Viet Nam Foods</h5>
+                            <p>Delicious vietnamese food including pho ga, noodles, spring rolls on white table</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/9.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Asian Food</h5>
+                            <p>Top view composition of various Asian food in bowl</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main class="main">
+            <!-- Main content -->
+            <div class="container-fluid">
+                <div class="content text-center p-3">
+                    <h2>Our Popular Dishes</h2>
+                    <p class="text-muted font-italic">We Love Foods</p>
+                    <p class="text-justify pl-3 pr-3">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       <p> <a href="https://facebook.com/VuNguyenHuong.official" target="_blank" class="font-italic text-decoration-none text-success">-- Vu Nguyen Huong --</a></p>
+                    </p>
+                </div>
+
+                <!-- List Product -->
+                <h3 class="pb-3 text-center" id="products">Products</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/v1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">The Best Easy One Pot Chicken</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
+                                Add To Cart
+                            </button>
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                More
+                            </button>
+                            <div class="collapse mt-3" id="collapseExample1">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./images/v2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh and Healthy Mixed Mayonnaise</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
+                                Add To Cart
+                            </button>
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                More
+                            </button>
+                            <div class="collapse mt-3" id="collapseExample2">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./images/v4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruity Pancake with Orange</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
+                                Add To Cart
+                            </button>
+                            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                                More
+                            </button>
+                            <div class="collapse mt-3" id="collapseExample3">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="about">
+                <div class="content">
+                    <h3 class="mt-4 text-center">About Us</h3>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/VuNguyenHuong.Official" class="text-decoration-none text-success" target="_blank">Vu Nguyen Huong</a></h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/kemss.huyenss" class="text-decoration-none text-success" target="_blank">Mai Thi Khanh Huyen</a></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="./images/h3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5><a href="https://www.facebook.com/hoai.thi.5895" class="text-decoration-none text-success" target="_blank">Tran Thi Hoai</a></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="container-fluid" id="contact">
+                <h3 class="text-center m-3">Contact Us</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Full name</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Full name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="510 VNH Street" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Category</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>Food</option>
+                                        <option>Meat</option>
+                                        <option>Vegetables</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                  <label for="">Message</label>
+                                  <textarea class="form-control" name="" id="" rows="3" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./images/v2.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid text-center p-5" style="font-size: 20px;">
+                <a href="https://www.facebook.com/VuNguyenHuong.Official" target="_blank" class="text-secondary"><i class="fa-brands fa-square-facebook m-1"></i></a>
+                <a href="https://www.instagram.com/vunguyenhuong.official/" target="_blank" class="text-secondary"><i class="fa-brands fa-instagram m-1"></i></a>
+                <a href="https://www.instagram.com/huyenmtkph17826/" target="_blank" class="text-secondary"><i class="fa-brands fa-snapchat m-1"></i></a>
+                <a href="https://www.pinterest.com/bewild_" target="_blank" class="text-secondary"><i class="fa-brands fa-pinterest m-1"></i></a>
+                <a href="https://twitter.com/VuNguynHng9" target="_blank" class="text-secondary"><i class="fa-brands fa-twitter m-1"></i></a>
+                <a href="https://github.com/bewildx24" target="_blank" class="text-secondary"><i class="fa-brands fa-github m-1"></i></a>
+                <p style="font-size: 15px;" class="mt-2">Powered by <a href="https://www.facebook.com/VuNguyenHuong.Official" target="_blank">Vu Nguyen Huong</a></p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <!-- Modal Sign In -->
+        <div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="recipient-name" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="signin" id="signin" class="btn btn-success btn-block" type="submit" value="Sign In">
+                                <div class="form-group pt-2">
+                                    <small id="helpId" class="text-muted"><a href="#" class="text-danger">Forgot Password ?</a></small>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-group social__group">
+                            <button type="button" name="" id="" class="btn btn-primary"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                            <button type="button" name="" id="" class="btn btn-danger"><i class="fa-brands fa-google"></i> Google</button>
+                        </div>
+                        <p>You do not have an account, <a href="#modalSignUp" class="text-danger" data-toggle="modal" data-target="#modalSignUp" data-dismiss="modal">Register Now</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sign Up -->
+        <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="recipient-name" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="recipient-name" placeholder="Re-Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="signup" id="signup" class="btn btn-success btn-block" type="submit" value="Sign Up">
+                            </div>
+                        </form>
+                        <div class="form-group social__group">
+                            <button type="button" name="" id="" class="btn btn-primary"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                            <button type="button" name="" id="" class="btn btn-danger"><i class="fa-brands fa-google"></i> Google</button>
+                        </div>
+                        <p class="text-center">Agree with <a href="#">Terms</a> & <a href="#">Privacy Policy</a></p>
+                        <p class="text-center">Already have an account, <a href="#" class="text-danger" data-dismiss="modal" data-toggle="modal" data-target="#modalSignIn">Sign In Here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Success -->
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="alertSuccess">
+            <div class="modal-dialog modal-lg">
+                <div class="alert alert-success">
+                    Successfully!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model Notification -->
+        <div class="modal fade bd-example-modal-lg" id="alertNoti" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="./images/v2.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} small" alt="">
+                            <a href="#" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#modalSignUp">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-header">
+                        <h5 class="modal-title">Notifications</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <ul>
+                        <li><img src="./images/2.jpg" alt="">Black Friday sale off 50%</li>
+                        <li><img src="./images/2.jpg" alt="">Big Sale in Merry Christmas</li>
+                        <li><img src="./images/2.jpg" alt="">Up to 20% off in your birthday</li>
+                       </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>          
+
+
+        <!-- Model Add Cart -->
+        <div class="modal fade" id="alertAddCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Are you want to add to cart ?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                        
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertSuccess" data-dismiss="modal">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
