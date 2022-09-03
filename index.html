@@ -110,13 +110,19 @@
                 </div>
 
                 <!-- List Product -->
-                <h3 class="pb-3 text-center" id="products">Products</h3>
+                <h3 class="p-3 text-center" id="products">Products</h3>
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top" src="./images/v1.jpg" alt="Card image cap">
+                        <div class="product__img">
+                            <img class="card-img-top image__item" src="./images/v1.jpg" alt="Card image cap">
+                            <div class="btn__more">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">Add To Cart</button>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">The Best Easy One Pot Chicken</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="text-success font-weight-bold"><i class="fa-solid fa-sack-dollar"></i> 25.500 ₫ <del class="text-secondary font-weight-normal">30.000 ₫</del> </p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
                                 Add To Cart
@@ -133,10 +139,16 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="./images/v2.jpg" alt="Card image cap">
+                        <div class="product__img">
+                            <img class="card-img-top image__item" src="./images/v2.jpg" alt="Card image cap">
+                            <div class="btn__more">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">Add To Cart</button>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Fresh and Healthy Mixed Mayonnaise</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="text-success font-weight-bold"><i class="fa-solid fa-sack-dollar"></i> 35.000 ₫ <del class="text-secondary font-weight-normal">45.500 ₫</del> </p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
                                 Add To Cart
@@ -153,10 +165,16 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-img-top" src="./images/v4.jpg" alt="Card image cap">
+                        <div class="product__img">
+                            <img class="card-img-top image__item" src="./images/v4.jpg" alt="Card image cap">
+                            <div class="btn__more">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">Add To Cart</button>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Fruity Pancake with Orange</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="text-success font-weight-bold"><i class="fa-solid fa-sack-dollar"></i> 65.800 ₫ <del class="text-secondary font-weight-normal">80.300 ₫</del> </p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small><span class="badge badge-success ml-1">New</span></p>
                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#alertAddCart">
                                 Add To Cart
@@ -179,21 +197,43 @@
                     <h3 class="mt-4 text-center">About Us</h3>
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top" src="./images/h2.jpg" alt="Card image cap">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <img class="card-img-top" src="./images/h1.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-back">
+                                    <img class="card-img-top" src="./images/h4.jpg" alt="Card image cap">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5><a href="https://www.facebook.com/VuNguyenHuong.Official" class="text-decoration-none text-success" target="_blank">Vu Nguyen Huong</a></h6>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
+                                
                         <div class="card">
-                            <img class="card-img-top" src="./images/h1.jpg" alt="Card image cap">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <img class="card-img-top" src="./images/h2.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-back">
+                                    <img class="card-img-top" src="./images/h3.jpg" alt="Card image cap">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5><a href="https://www.facebook.com/kemss.huyenss" class="text-decoration-none text-success" target="_blank">Mai Thi Khanh Huyen</a></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="./images/h3.jpg" alt="Card image cap">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <img class="card-img-top" src="./images/h5.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-back">
+                                    <img class="card-img-top" src="./images/h6.jpg" alt="Card image cap">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5><a href="https://www.facebook.com/hoai.thi.5895" class="text-decoration-none text-success" target="_blank">Tran Thi Hoai</a></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
