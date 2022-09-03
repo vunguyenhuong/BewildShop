@@ -53,22 +53,22 @@ h2:hover, h3:hover, h4:hover, h5:hover {
     transition: transform 300ms;
     transition-timing-function: linear;
     display: flex;
-  }
-  
-  .card-front {
+}
+
+.card-front {
     transform: rotateY(0deg);
-  }
-  
-  .card-back {
+}
+
+.card-back {
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
-  }
-  
-  .card-flip:hover .card-front {
+}
+
+.card-flip:hover .card-front {
     transform: rotateY(-180deg);
-  }
-    
-  .card-flip:hover .card-back {
+}
+  
+.card-flip:hover .card-back {
     transform: rotateY(0deg);
-  }
+}
