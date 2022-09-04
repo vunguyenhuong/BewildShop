@@ -18,14 +18,21 @@
         <header>
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                <a href="#"><img src="./images/logo.png" alt="" style="width: 75px;"></a>
+                <a href="#" class="__logo"><img src="./images/logo.png" alt="" style="width: 75px;">
+                <div class="__qr">
+                    <div class="__qr-img">
+                        <img src="./images/qr-code.png" alt="">
+                    </div>
+                </div>
+            </a>
+                
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-success" href="#"><i class="fa-solid fa-house"></i> Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-success" href="#"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-success" href="#products"><i class="fa-solid fa-utensils"></i> Products</a>
@@ -33,10 +40,34 @@
                         <li class="nav-item">
                             <a class="nav-link text-success" href="#about"><i class="fa-solid fa-users"></i>About</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-success" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown nav__noti">
+                            <a class="nav-link text-success dropdown-toggle">
                                 <i class="fa fa-bell" aria-hidden="true"></i> Notifications
                             </a>
+                            <div class="__noti pl-1 pt-1">
+                                <div class="__noti-header">
+                                    <h6 class="h6 text-success">Notifications</h6>
+                                    <hr class="my-2">
+                                </div>
+                                <div class="__noti-content">
+                                    <div class="__noti-item">
+                                        <div class="__noti-img">
+                                            <img src="./images/20percent-off.png" alt="">
+                                        </div>
+                                        <div class="__noti-text">
+                                            <a href="#" class="text-success">Black Friday sale off 20%</a>
+                                        </div>
+                                    </div>
+                                    <div class="__noti-item">
+                                        <div class="__noti-img">
+                                            <img src="./images/sale.png" alt="">
+                                        </div>
+                                        <div class="__noti-text">
+                                            <a href="#" class="text-success">Big Sale in Green Monday</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-success" href="#contact"><i class="fa-solid fa-circle-info"></i> Contact</a>
@@ -447,5 +478,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
     </body>
 </html>

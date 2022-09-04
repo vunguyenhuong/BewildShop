@@ -76,3 +76,68 @@ h2:hover, h3:hover, h4:hover, h5:hover {
 .collapseOne {
     position: absolute;
 }
+
+.__noti {
+    position: absolute;
+    background-color: #fff;
+    width: 300px;
+    left: 5%;
+    display: none;
+    border: 2px solid #d3d3d341;
+    border-radius: 0 10px 10px 10px;
+}
+
+.nav__noti:hover .__noti{
+    display: block;
+    transform-origin: right top;
+    animation: headerNotifyGrowth ease-in 0.1s;
+}
+
+.__noti-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 50px;
+}
+
+.__noti-img img {
+   width: 45px;
+}
+
+.__noti-text a {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.__qr {
+    position: absolute;
+    width: 150px;
+    margin-top: 15px;
+    display: none;
+}
+
+.__qr-img img {
+    width: 100%;
+}
+
+.__logo:hover .__qr {
+    display: block;
+    transform-origin: right top;
+    animation: headerNotifyGrowth ease-in 0.1s;
+}
+
+
+::selection {
+    background-color: #28A745;
+    color: #fff;
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
