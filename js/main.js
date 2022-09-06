@@ -45,6 +45,4 @@ window.fbAsyncInit = function() {
 
 
 // Audio
-window.onload = function() {
-    var context = new AudioContext();
-  }
+var myaudio = document.getElementById("audioID").autoplay = true;
