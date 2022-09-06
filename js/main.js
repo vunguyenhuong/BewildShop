@@ -47,6 +47,8 @@ window.fbAsyncInit = function() {
 // Audio
 var sound = document.getElementById("audio");
 
-function playSound(){
-    return sound.play();
+window.onload = function(){
+    sound.play();
+    var context = new AudioContext();
+    console.log("Page is loaded!")
 }
