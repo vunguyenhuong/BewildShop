@@ -1,6 +1,18 @@
 *{
     scroll-behavior: smooth;
 }
+
+body {
+    animation: fadeIn ease-in 2s;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(-45deg, #fff8f6, #fff3f7, #cbf1ff, #c4fff1);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+}
+
 .social__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,7 +102,7 @@ h2:hover, h3:hover, h4:hover, h5:hover {
 .nav__noti:hover .__noti{
     display: block;
     transform-origin: right top;
-    animation: headerNotifyGrowth ease-in 0.1s;
+    animation: headerNotifyGrowth ease-in 0.2s;
 }
 
 .__noti-item {
@@ -124,8 +136,19 @@ h2:hover, h3:hover, h4:hover, h5:hover {
 .__logo:hover .__qr {
     display: block;
     transform-origin: right top;
-    animation: headerNotifyGrowth ease-in 0.1s;
+    animation: headerNotifyGrowth ease-in 0.2s;
 }
+
+.image__item {
+    animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+.card {
+    border: none;
+}
+
+
+
 
 
 ::selection {
@@ -133,7 +156,16 @@ h2:hover, h3:hover, h4:hover, h5:hover {
     color: #fff;
 }
 
-@keyframes headerNotifyGrowth{
+::-webkit-scrollbar {
+    background-color: #47ed6e;
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #28A745;
+}
+
+@keyframes headerNotifyGrowth {
     from{
         transform: scaleY(0);
     }
@@ -141,3 +173,38 @@ h2:hover, h3:hover, h4:hover, h5:hover {
         transform: scaleY(1);
     }
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.6;
+        transform: translateY(-550px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

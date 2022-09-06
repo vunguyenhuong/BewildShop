@@ -6,21 +6,21 @@
 //     }
 // });
 
-$(document).on("contextmenu",function(e){        
-   e.preventDefault();
-});
+// $(document).on("contextmenu",function(e){        
+//    e.preventDefault();
+// });
 
-document.onkeydown = function(e) {
-    if (e.ctrlKey && 
-        (e.keyCode === 67 || 
-         e.keyCode === 86 || 
-         e.keyCode === 85 || 
-         e.keyCode === 117)) {
-        return false;
-    } else {
-        return true;
-    }
-};
+// document.onkeydown = function(e) {
+//     if (e.ctrlKey && 
+//         (e.keyCode === 67 || 
+//          e.keyCode === 86 || 
+//          e.keyCode === 85 || 
+//          e.keyCode === 117)) {
+//         return false;
+//     } else {
+//         return true;
+//     }
+// };
 
 
 // Fanpage Message
@@ -45,14 +45,6 @@ window.fbAsyncInit = function() {
 
 
 // Audio
-var sound = document.getElementById("audio");
-
-window.onload = function(){
-    sound.play();
-    sound.autoplay = true;
-    sound.load()
-    var context = new AudioContext();
-    console.log("Page is loaded!")
+window.onload=function(){
+    document.getElementById("my_audio").play();
 }
-
-sound.play()
