@@ -23,9 +23,7 @@ document.onkeydown = function(e) {
 };
 
 
-
-
-
+// Fanpage Message
 var chatbox = document.getElementById('fb-customer-chat');
 chatbox.setAttribute("page_id", "108688041898641");
 chatbox.setAttribute("attribution", "biz_inbox");
@@ -44,3 +42,9 @@ window.fbAsyncInit = function() {
     js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+
+// Audio
+window.onload = function() {
+    var context = new AudioContext();
+  }
