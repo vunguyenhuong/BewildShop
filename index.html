@@ -14,11 +14,13 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
-        <iframe src="./audio/main.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        <audio autoplay loop>
-            <source src="./audio/main.mp3" type="audio/mp3">
+    <body onload="playSound()">
+        <audio id="audio" autoplay loop> 
+            <source src="./audio/main.mp3"  type="audio/mp3"> 
+            <source src="./audio/main.mp3"  type="audio/ogg">
+            <source src="./audio/main.mp3"  type="audio/mpeg">  
         </audio>
+
         <div id="fb-root"></div>
         <!-- Your Plugin chat code -->
         <div id="fb-customer-chat" class="fb-customerchat">
