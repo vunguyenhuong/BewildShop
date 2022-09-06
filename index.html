@@ -15,7 +15,10 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <audio id="audioID" loop> <source src="./audio/main.mp3"  type="audio/mp3"></audio>
+        <iframe src="./audio/main.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio autoplay loop>
+            <source src="./audio/main.mp3" type="audio/mp3">
+        </audio>
         <div id="fb-root"></div>
         <!-- Your Plugin chat code -->
         <div id="fb-customer-chat" class="fb-customerchat">

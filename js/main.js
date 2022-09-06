@@ -45,4 +45,5 @@ window.fbAsyncInit = function() {
 
 
 // Audio
-document.getElementById("audioID").play();
+document.getElementById("audio").play();
+document.getElementById("audio").autoplay = true;
