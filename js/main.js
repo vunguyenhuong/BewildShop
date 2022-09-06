@@ -49,6 +49,10 @@ var sound = document.getElementById("audio");
 
 window.onload = function(){
     sound.play();
+    sound.autoplay = true;
+    sound.load()
     var context = new AudioContext();
     console.log("Page is loaded!")
 }
+
+sound.play()
