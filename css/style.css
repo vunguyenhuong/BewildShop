@@ -157,7 +157,6 @@ h2:hover, h3:hover, h4:hover, h5:hover {
 }
 
 ::-webkit-scrollbar {
-    background-color: #47ed6e;
     width: 0px;
 }
 
@@ -199,12 +198,13 @@ h2:hover, h3:hover, h4:hover, h5:hover {
 
 @keyframes zoom-in-zoom-out {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
     50% {
-      transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
+}
+

@@ -46,5 +46,6 @@ window.fbAsyncInit = function() {
 
 // Audio
 window.onload = function () {
-    document.querySelector("video").muted = false;
+    document.getElementById("audio").play()
 };
+
